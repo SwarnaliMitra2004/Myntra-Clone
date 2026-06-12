@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myntra Clone - Bag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="index.html"><img class="myntra_home" src="myntra_logo.webp" alt="Myntra Home"></a>
+        </div>
+        <nav class="nav_bar">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Living</a>
+            <a href="#">Beauty</a>
+            <a href="#">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">search</span>
+            <input class="search_input" placeholder="Search for products, brands and more">
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+            <a href="bag.html" class="action_container" style="text-decoration: none; color: inherit; position: relative;">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-item-count" style="visibility: hidden; background-color: #f16565; color: white; padding: 2px 6px; font-size: 12px; border-radius: 50%; position: absolute; top: -5px; right: -10px;">0</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="bag-page" style="display: flex; justify-content: center; padding: 40px; gap: 20px;">
+            <div class="bag-items-container" style="flex: 2;"></div>
+            <div class="bag-summary" style="flex: 1; border: 1px solid #eaeaec; padding: 20px; border-radius: 4px; align-self: flex-start;"></div>
+        </div>
+    </main>
+    <script src="items.js"></script>
+    <script src="index.js"></script>
+    <script src="bag.js"></script>
+</body>
+</html>
